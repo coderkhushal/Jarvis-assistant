@@ -14,8 +14,8 @@ def ai(prompt):
     text = f"Open AI response for Prompt : {prompt}  \n**************************\n\n "
     try:
 
-        from apikeycontainer import apikey
-        openai.api_key = apikey
+        # from apikeycontainer import apikey
+        # openai.api_key = apikey
 
         response = openai.Completion.create(
             model="text-davinci-003",
@@ -48,8 +48,8 @@ def chat(query):
     chatstr+= f"Khushal: {query}\n Jarvis: "
     try:
 
-        from apikeycontainer import apikey
-        openai.api_key = apikey
+        # from apikeycontainer import apikey
+        # openai.api_key = apikey
 
         response = openai.Completion.create(
             model="text-davinci-003",
